@@ -6,11 +6,13 @@
     - power on :           '(PWR 1)'
     - power off :          '(PWR 0)'
     - power request:       '(PWR?)'
-    - reply (powered on):  '(PWR!001)'
-    - reply (powered off): '(PWR!000)'
+    - reply (powered on):  '(PWR!001 ...)'
+    - reply (powered off): '(PWR!000 "Режим ожидания")'
+    - reply (powering off): '(PWR!010)' (только для 4k50-rgb)
+    - reply (powering on): '(PWR!011)' (только для 4k50-rgb)
 
 Поддерживаемые модели
-  - 4K7-HS (проверено)
+  - 4K7-HS (проверено. Отвечает только включен или выключен)
   - 4k50-rgb (провереноа). Команды приходя в формате '(PWR!000 "Режим ожидания")'
 
 Включается за 65 секунд, выключается за 10 секунд
